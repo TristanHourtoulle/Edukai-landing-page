@@ -1,4 +1,5 @@
 import { Toaster } from "@/components/ui/toaster";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header } from "./components/Header";
@@ -59,8 +60,8 @@ export default function RootLayout({
           <Header />
         </div>
         <div className="flex-1 flex items-center justify-center relative z-10">
-          <Toaster />
           {children}
+          <Toaster />
         </div>
       </body>
     </html>

@@ -28,6 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icons/logo-2.png" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased px-[5%] min-h-screen w-full flex flex-col bg-gradient-to-b from-[#0f172a] to-[#1e293b] relative`}
       >

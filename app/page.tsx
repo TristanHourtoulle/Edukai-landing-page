@@ -26,9 +26,13 @@ export default function Home() {
           Reste informé
         </Button>
 
-        <Button className="text-blue-500 py-3 px-8 rounded-full shadow-md transition-all bg-primary-500 bg-opacity-10 border-2 border-primary-500 hover:bg-primary-300 hover:bg-opacity-10">
-          Nous contacter
-        </Button>
+        <a
+          href="/contact"
+        >
+          <Button className="text-blue-500 py-3 px-8 rounded-full shadow-md transition-all bg-primary-500 bg-opacity-10 border-2 border-primary-500 hover:bg-primary-300 hover:bg-opacity-10">
+            Nous contacter
+          </Button>
+        </a>
       </div>
 
       <div className="flex items-center justify-center gap-5 mt-[2%]">

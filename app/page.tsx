@@ -35,14 +35,14 @@ export default function Home() {
           width={200}
           height={200}
           alt="Illustration"
-          className="shadow-lg transition-all transform hover:scale-105 order-2 lg:order-1"
+          className="shadow-lg transition-all transform hover:scale-105 order-2 lg:order-1" // Affiché en premier sur mobile, dernier sur PC
         />
         <Image
           src={"/screens/LP - 4.svg"}
           width={400}
           height={400}
           alt="Illustration"
-          className="shadow-lg transition-all transform hover:scale-105 rounded-lg"
+          className="shadow-lg transition-all transform hover:scale-105 rounded-lg order-1 lg:order-2" // Affiché au centre sur mobile et PC
           style={{
             boxShadow: "0 4px 20px rgba(54, 120, 255, 0.5)", // Ombre colorée
           }}
@@ -52,7 +52,7 @@ export default function Home() {
           width={200}
           height={200}
           alt="Illustration"
-          className="shadow-lg transition-all transform hover:scale-105"
+          className="shadow-lg transition-all transform hover:scale-105 order-3 lg:order-3" // Affiché en dernier sur mobile, premier sur PC
         />
       </div>
     </div>

@@ -33,7 +33,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center px-4">
-      <h1 className="outfit-bold text-4xl text-white font-bold mb-8">
+      <h1 className="outfit-bold text-2xl lg:text-4xl text-white font-bold mb-8">
         Notre Équipe
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
@@ -54,7 +54,7 @@ export default function Team() {
             <p className="text-white text-opacity-75 mt-2 text-left">
               {member.description}
             </p>
-            <div className="flex gap-4 mt-auto">
+            <div className="flex gap-4 mt-4 lg:mt-auto">
               {member.linkedin && (
                 <a
                   href={member.linkedin}

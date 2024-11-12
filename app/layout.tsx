@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Header } from "./components/Header";
+import { Header } from "./components/header/Header";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased px-[5%] min-h-screen w-full flex flex-col bg-gradient-to-b from-[#0f172a] to-[#1e293b] relative`}
       >
         <div
-          className="absolute pointer-events-none z-0  animate-glow-pulse"
+          className="absolute pointer-events-none z-0 animate-glow-pulse h-full hidden lg:block"
           style={{
             width: "600px",
             height: "300px",
@@ -48,7 +48,7 @@ export default function RootLayout({
           }}
         ></div>
         <div
-          className="absolute pointer-events-none z-0 animate-glow-float"
+          className="absolute pointer-events-none z-0 animate-glow-float h-full hidden lg:block"
           style={{
             width: "600px",
             height: "500px",
@@ -60,10 +60,10 @@ export default function RootLayout({
           }}
         ></div>
 
-        <div className="flex items-center justify-center z-10">
+        <div className="flex items-center justify-center z-20 h-full">
           <Header />
         </div>
-        <div className="flex-1 flex items-center justify-center relative z-10">
+        <div className="flex-1 flex items-center justify-center relative z-10 h-full pb-[10%] lg:pb-[5%]">
           {children}
           <Toaster />
         </div>

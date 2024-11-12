@@ -75,16 +75,18 @@ export default function Contact() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center px-4 outfit-regular">
-      <h1 className="text-4xl text-white outfit-bold mb-2">Contacte nous</h1>
+      <h1 className="text-2xl lg:text-4xl text-white outfit-bold mb-2">
+        Contacte nous
+      </h1>
 
-      <p className="text-md outfit-light text-white text-opacity-75 mb-4 text-center max-w-xl">
+      <p className="text-xs  lg:text-md outfit-light text-white text-opacity-75 mb-4 text-center max-w-xl">
         Une question, une suggestion ou un projet ? N'hésite pas à nous
         contacter en remplissant le formulaire ci-dessous.
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-[#1e293b] bg-opacity-50 rounded-lg p-8 w-full max-w-lg shadow-lg"
+        className="bg-[#1e293b] bg-opacity-50 rounded-lg p-4 lg:p-8 w-full max-w-lg shadow-lg"
       >
         <div className="flex flex-col gap-4">
           <input
@@ -93,7 +95,7 @@ export default function Contact() {
             placeholder="Nom"
             value={formData.name}
             onChange={handleChange}
-            className="p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
+            className="text-sm lg:text-lg p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
             required
           />
           <input
@@ -102,7 +104,7 @@ export default function Contact() {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
+            className="text-sm lg:text-lg p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
             required
           />
           <input
@@ -111,14 +113,14 @@ export default function Contact() {
             placeholder="Sujet"
             value={formData.subject}
             onChange={handleChange}
-            className="p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
+            className="text-sm lg:text-lg p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400"
           />
           <textarea
             name="message"
             placeholder="Votre message"
             value={formData.message}
             onChange={handleChange}
-            className="p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400 h-32 resize-none"
+            className="text-sm lg:text-lg p-3 rounded-lg bg-gray-500 bg-opacity-50 text-white placeholder-gray-400 h-32 resize-none"
             required
           ></textarea>
         </div>

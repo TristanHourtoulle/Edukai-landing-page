@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="outfit-regular w-full min-h-screen flex flex-col gap-6 items-center justify-center pb-[1.5%] lg:pb-[3%] pt-[10%] lg:pt-0">
+    <div className="outfit-regular w-full flex flex-col gap-6 items-center justify-center pb-[1.5%] lg:pb-[3%] pt-[10%] lg:pt-0">
       <div className="flex flex-col gap-2 lg:gap-3 items-center justify-center text-center outfit-regular">
         <h1 className="outfit-semibold text-3xl lg:text-7xl text-white w-full">
           L'IA au service de tes révisions

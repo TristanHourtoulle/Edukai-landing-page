@@ -54,7 +54,7 @@ export default function Solution() {
             Personnalisation sur-mesure
           </h3>
           <p className="text-white text-opacity-75 text-sm lg:text-lg mt-2">
-            Chaque fiche et quiz est adapté spécifiquement à ton cours pour une
+            Chaque fiche et quiz sont adaptés spécifiquement à ton cours pour une
             révision plus ciblée.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function Solution() {
               Upload
             </h3>
             <p className="text-white text-opacity-75 text-sm lg:text-lg mt-2">
-              Envoye ton cours, sous forme de photo ou de fichier.
+              Envoie ton cours, sous forme de photo ou de fichier.
             </p>
           </div>
 
@@ -82,14 +82,14 @@ export default function Solution() {
               Laisse l'IA agir
             </h3>
             <p className="text-white text-opacity-75 text-sm lg:text-lg mt-2">
-              Attend pendant que notre IA analyse ton cours.
+              Attends pendant que notre IA analyse ton cours.
             </p>
           </div>
 
           <div className="flex flex-col items-center bg-primary-500 bg-opacity-15 rounded-lg p-6 shadow-lg">
             <BookOpen size={60} className="text-white" />
             <h3 className="text-lg lg:text-xl text-primary-500 font-semibold mt-4">
-              Apprend
+              Apprends
             </h3>
             <p className="text-white text-opacity-75 text-sm lg:text-lg mt-2">
               Étudie grâce aux fiches de révision générées automatiquement.

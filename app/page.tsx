@@ -9,7 +9,7 @@ export default function Home() {
           L'IA au service de tes révisions
         </h1>
         <p className="text-white text-opacity-75 text-sm lg:text-lg text-center outfit-light w-full px-[5%] lg:px-[10%]">
-          Envoye tes documents, notre outil les transforme en fiches et quiz
+          Envoie tes documents, notre outil les transforme en fiches et quiz
           sur-mesure.<br></br>
           <span className="text-primary-200">
             Révise efficacement, sans effort.

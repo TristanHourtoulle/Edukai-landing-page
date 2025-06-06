@@ -13,16 +13,26 @@ const teamMembers = [
     avatar: "/images/team/Tristan (1).png",
     color: "from-blue-500 to-blue-600",
     lightColor: "from-blue-50 to-blue-100",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design", "Figma"]
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design", "Figma"],
+    socialLinks: {
+      github: "https://github.com/tristanhourtoulle",
+      linkedin: "https://www.linkedin.com/in/tristan-hourtoulle",
+      mail: ""
+    }
   },
   {
     name: "Khalid Belkassmi E.H.",
     role: "Backend Developer & AI",
-    description: "Expert en intelligence artificielle et développement backend. Architecte des solutions d'IA d'Edukai qui révolutionnent l'apprentissage.",
+    description: "Expert en développement web full-stack, spécialisé backend. Architecte de solutions innovantes et d’IA d’Edukai au service de l’apprentissage.",
     avatar: "/images/team/Khalid (1).png",
     color: "from-purple-500 to-purple-600",
     lightColor: "from-purple-50 to-purple-100",
-    skills: ["NodeJS", "AI/ML", "Backend", "Data Science", "MongoDB"]
+    skills: ["NodeJS", "AI/ML", "Backend", "Data Science", "MongoDB"],
+    socialLinks: {
+      github: "https://github.com/khalidbelk",
+      linkedin: "",
+      mail: "khalidbelk@proton.me"
+    }
   },
   {
     name: "Lucas Rossignon",
@@ -31,7 +41,12 @@ const teamMembers = [
     avatar: "/images/team/Lucas (1).png",
     color: "from-green-500 to-green-600",
     lightColor: "from-green-50 to-green-100",
-    skills: ["React Native", "iOS", "Android", "Mobile UX", "Swift", "Kotlin"]
+    skills: ["React Native", "iOS", "Android", "Mobile UX", "Swift", "Kotlin"],
+    socialLinks: {
+      github: "https://github.com/LucasRossignon",
+      linkedin: "https://www.linkedin.com/in/lucas-rossignon-43a559201",
+      mail: ""
+    }
   }
 ];
 
@@ -44,7 +59,7 @@ export function TeamSection() {
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-r from-green-400/10 to-blue-400/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-gradient-to-r from-purple-400/5 to-pink-400/5 rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
@@ -61,7 +76,7 @@ export function TeamSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto outfit-regular leading-relaxed">
-            Une équipe passionnée et motivée par le même objectif : 
+            Une équipe passionnée et motivée par le même objectif :
             <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> aider les étudiants à apprendre plus efficacement.</span>
           </p>
         </div>
@@ -69,16 +84,16 @@ export function TeamSection() {
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
           {teamMembers.map((member, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="group bg-white/90 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-3 overflow-hidden relative"
             >
               {/* Gradient background on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${member.lightColor} opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out`}></div>
-              
+
               {/* Animated border glow effect */}
               <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${member.color} opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500 ease-out scale-105`}></div>
-              
+
               <CardContent className="p-8 text-center relative z-10">
                 {/* Avatar with enhanced styling */}
                 <div className="relative mb-6 group-hover:mb-8 transition-all duration-500 ease-out">
@@ -93,37 +108,37 @@ export function TeamSection() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    
+
                     {/* Animated border */}
                     <div className={`absolute inset-0 rounded-2xl border-2 border-transparent bg-gradient-to-r ${member.color} opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out p-0.5`}>
                       <div className="w-full h-full rounded-xl bg-white"></div>
                     </div>
-                    
+
                     {/* Floating glow effect */}
                     <div className={`absolute inset-0 w-24 h-24 bg-gradient-to-r ${member.color} rounded-2xl opacity-0 group-hover:opacity-30 blur-lg scale-150 transition-all duration-700 ease-out`}></div>
                   </div>
                 </div>
-                
+
                 {/* Name and role */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2 satoshi-medium group-hover:scale-105 transition-transform duration-300 ease-out">
                   {member.name}
                 </h3>
-                <Badge 
-                  variant="secondary" 
+                <Badge
+                  variant="secondary"
                   className={`mb-4 bg-gradient-to-r ${member.color} text-white border-0 group-hover:scale-105 transition-transform duration-300 ease-out`}
                 >
                   {member.role}
                 </Badge>
-                
+
                 {/* Description */}
                 <p className="text-gray-600 outfit-regular leading-relaxed mb-6 text-sm group-hover:text-gray-700 transition-colors duration-300 ease-out">
                   {member.description}
                 </p>
-                
+
                 {/* Skills */}
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
                   {member.skills.map((skill, skillIndex) => (
-                    <span 
+                    <span
                       key={skillIndex}
                       className="px-3 py-1 bg-white/80 backdrop-blur-sm rounded-lg text-xs satoshi-medium text-gray-700 border border-gray-100 group-hover:bg-white transition-all duration-300 ease-out hover:scale-105"
                     >
@@ -131,18 +146,34 @@ export function TeamSection() {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Social links */}
                 <div className="flex justify-center gap-3">
+
+                {member.socialLinks.github && (
                   <button className="p-3 bg-white/80 backdrop-blur-sm rounded-xl hover:bg-white transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg group/btn">
-                    <Github className="w-4 h-4 text-gray-700 group-hover/btn:text-gray-900" />
+                    <a href={member.socialLinks.github} target="_blank">
+                      <Github className="w-4 h-4 text-gray-700 group-hover/btn:text-gray-900" />
+                    </a>
                   </button>
-                  <button className="p-3 bg-white/80 backdrop-blur-sm rounded-xl hover:bg-white transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg group/btn">
-                    <Linkedin className="w-4 h-4 text-gray-700 group-hover/btn:text-blue-600" />
-                  </button>
-                  <button className="p-3 bg-white/80 backdrop-blur-sm rounded-xl hover:bg-white transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg group/btn">
-                    <Mail className="w-4 h-4 text-gray-700 group-hover/btn:text-green-600" />
-                  </button>
+                )}
+
+                  {member.socialLinks.linkedin && (
+                    <a href={member.socialLinks.linkedin} target="_blank">
+                      <button className="p-3 bg-white/80 backdrop-blur-sm rounded-xl hover:bg-white transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg group/btn">
+                        <Linkedin className="w-4 h-4 text-gray-700 group-hover/btn:text-blue-600" />
+                      </button>
+                    </a>
+                  )}
+
+                  {member.socialLinks.mail && (
+                    <a href={`mailto:${member.socialLinks.mail}`} target="_blank">
+                      <button className="p-3 bg-white/80 backdrop-blur-sm rounded-xl hover:bg-white transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg group/btn">
+                        <Mail className="w-4 h-4 text-gray-700 group-hover/btn:text-green-600" />
+                      </button>
+                    </a>
+                  )}
+
                 </div>
               </CardContent>
             </Card>
@@ -159,7 +190,7 @@ export function TeamSection() {
             <div className="absolute bottom-4 left-4 opacity-10">
               <Heart className="w-8 h-8 text-blue-600" />
             </div>
-            
+
             <div className="relative z-10 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 satoshi-medium">
                 Notre mission
@@ -169,7 +200,7 @@ export function TeamSection() {
                 Edukai est né de notre volonté de révolutionner la façon dont les étudiants abordent leurs révisions, 
                 en utilisant l&apos;intelligence artificielle pour créer des expériences d&apos;apprentissage sur mesure.
               </p>
-              
+
               <div className="flex flex-wrap justify-center gap-6">
                 <div className="flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-100">
                   <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
@@ -200,9 +231,9 @@ export function TeamSection() {
             Suivez notre aventure
           </h3>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a 
-              href="https://www.instagram.com/edukaifr/?hl=fr" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/edukaifr/?hl=fr"
+              target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl border border-pink-100 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1"
             >
@@ -214,10 +245,10 @@ export function TeamSection() {
                 <span className="text-sm text-gray-600 outfit-regular">@edukaifr</span>
               </div>
             </a>
-            
-            <a 
-              href="https://github.com/EdukaiFR/website" 
-              target="_blank" 
+
+            <a
+              href="https://github.com/EdukaiFR/website"
+              target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1"
             >
@@ -234,4 +265,4 @@ export function TeamSection() {
       </div>
     </section>
   );
-} 
+}

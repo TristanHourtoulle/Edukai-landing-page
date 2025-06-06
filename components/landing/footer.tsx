@@ -185,7 +185,7 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2 text-center sm:text-left">
               <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2 sm:mb-0">
                 <span className="text-white/80 text-sm outfit-regular">
-                  © 2024 Edukai. Fait avec
+                  © 2025 Edukai. Fait avec
                 </span>
                 <Heart className="w-4 h-4 text-red-400 fill-current" />
               </div>

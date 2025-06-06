@@ -59,7 +59,7 @@ export function HeroSection() {
 
           {/* Sous-titre */}
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto outfit-regular leading-relaxed px-4 sm:px-0">
-            Edukai transforme automatiquement vos cours en quiz interactifs et fiches de révision personnalisées. 
+            Edukai transforme automatiquement vos cours en quiz interactifs et fiches de révision personnalisées.
             Plus de temps perdu à préparer, concentrez-vous sur l&apos;apprentissage !
           </p>
 

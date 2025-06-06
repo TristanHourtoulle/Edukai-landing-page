@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: "Tristan Hourtoulle",
     role: "Frontend Developer & Designer",
-    description: "Passionné par l&apos;UX/UI et les technologies frontend modernes. Créateur du design d&apos;Edukai et spécialisé en React, Next.js et design systems.",
+    description: "Passionné par l'UX/UI et les technologies frontend modernes. Créateur du design d'Edukai et spécialisé en React, Next.js et design systems.",
     avatar: "/images/team/Tristan (1).png",
     color: "from-blue-500 to-blue-600",
     lightColor: "from-blue-50 to-blue-100",
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Khalid Belkassmi E.H.",
     role: "Backend Developer & AI",
-    description: "Expert en intelligence artificielle et développement backend. Architecte des solutions d&apos;IA d&apos;Edukai qui révolutionnent l&apos;apprentissage.",
+    description: "Expert en intelligence artificielle et développement backend. Architecte des solutions d'IA d'Edukai qui révolutionnent l'apprentissage.",
     avatar: "/images/team/Khalid (1).png",
     color: "from-purple-500 to-purple-600",
     lightColor: "from-purple-50 to-purple-100",
@@ -27,7 +27,7 @@ const teamMembers = [
   {
     name: "Lucas Rossignon",
     role: "Mobile Developer",
-    description: "Développeur mobile spécialisé dans la création d&apos;applications natives et cross-platform performantes pour une expérience mobile exceptionnelle.",
+    description: "Développeur mobile spécialisé dans la création d'applications natives et cross-platform performantes pour une expérience mobile exceptionnelle.",
     avatar: "/images/team/Lucas (1).png",
     color: "from-green-500 to-green-600",
     lightColor: "from-green-50 to-green-100",

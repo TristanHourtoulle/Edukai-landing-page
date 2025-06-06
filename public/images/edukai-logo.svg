@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" class="w-auto h-8">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3678ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Pingouin stylisé -->
+  <g transform="translate(4, 6)">
+    <!-- Corps principal -->
+    <ellipse cx="14" cy="18" rx="8" ry="12" fill="url(#logoGradient)" opacity="0.9"/>
+    
+    <!-- Ventre blanc -->
+    <ellipse cx="14" cy="18" rx="5" ry="8" fill="white"/>
+    
+    <!-- Tête -->
+    <circle cx="14" cy="8" r="6" fill="url(#logoGradient)" opacity="0.9"/>
+    
+    <!-- Bec -->
+    <path d="M 14 10 L 16 12 L 14 13 Z" fill="#f59e0b"/>
+    
+    <!-- Yeux -->
+    <circle cx="12" cy="7" r="1.5" fill="white"/>
+    <circle cx="16" cy="7" r="1.5" fill="white"/>
+    <circle cx="12" cy="7" r="0.8" fill="#1f2937"/>
+    <circle cx="16" cy="7" r="0.8" fill="#1f2937"/>
+    
+    <!-- Ailes -->
+    <ellipse cx="8" cy="15" rx="3" ry="6" fill="url(#logoGradient)" opacity="0.7" transform="rotate(-15 8 15)"/>
+    <ellipse cx="20" cy="15" rx="3" ry="6" fill="url(#logoGradient)" opacity="0.7" transform="rotate(15 20 15)"/>
+    
+    <!-- Pieds -->
+    <ellipse cx="11" cy="28" rx="2" ry="1.5" fill="#f59e0b"/>
+    <ellipse cx="17" cy="28" rx="2" ry="1.5" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Texte Edukai -->
+  <text x="36" y="25" font-family="'Satoshi-Bold', sans-serif" font-size="18" font-weight="700" fill="url(#logoGradient)">
+    Edukai
+  </text>
+</svg> 

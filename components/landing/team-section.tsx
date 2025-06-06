@@ -22,7 +22,7 @@ const teamMembers = [
     avatar: "/images/team/Khalid (1).png",
     color: "from-purple-500 to-purple-600",
     lightColor: "from-purple-50 to-purple-100",
-    skills: ["Python", "AI/ML", "Backend", "Data Science", "TensorFlow", "FastAPI"]
+    skills: ["NodeJS", "AI/ML", "Backend", "Data Science", "MongoDB"]
   },
   {
     name: "Lucas Rossignon",
